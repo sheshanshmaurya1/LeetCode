@@ -9,6 +9,7 @@ public:
                 j++;
         
         }
+        /*
         int max=INT_MIN;
         for(int i=0; i<nums.size(); i++){
             if(help[i]>=max){
@@ -16,6 +17,10 @@ public:
             }
         }
         return max;
+        */
+
+        return *max_element(help.begin(), help.end());
+
     }
 };
 
