@@ -7,7 +7,7 @@ public:
                 if(i==j)
                     sum=sum+mat[i][j];    
                 if(i==((mat.size()-1)-j))
-                    sum=sum+mat[i][j];    
+                    sum=sum+mat[i][j];  //   When the condition is true, you should add mat[i][j], not calculate the column index again. so sum = sum + mat[i][((mat.size()-1)-j)]; is wrong for line no.10.
             }
         }
         if(mat.size()%2 != 0)
